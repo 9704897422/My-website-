@@ -3,32 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>education</title>
-    body{
-            background-image:url("grunge-watercolor-background-using-pastel-colours_1048-6530.webp");
-            background-size:cover;
-            background-position:center;
-            background-repeat:no-repeat;
-            height:100vh;
-            width:20vh;
+    <style>
+        body{
+        margin:0;
+           font-family:'Garamond', serif;
+           background:linear-gradient(to right,lightgreen,springgreen,teal);
+           padding:10px;
         }
-        .navebar{
-            background-color: yellow;
+        .education-table{
+        width :80%;
+        margin:auto;
+        border-shadow:0 8px 16px rgba(0,0,0,0.2);
+        border-radius:12px;
             overflow : hidden;
         }
-        .navebar a{
-            float: left;
-            display:inline-block;
-            text-align: center;
-            color: yellow;
-            padding :10px 10px;
-            font-weight:bold;
-            
-            
-        }
+  .education-table thead{
+      background-color:orange;
+      color:white;
+  }
+  .education-table tbody tr:nth-child(even){
+      background-color: yellow;
+  }
+   .education-table tbody tr:nth-child(odd){
+       background-color: turquoise;
+   }    
+   h1{
+       text-align: center;
+       color: red;
+       background-color: white;
+       font-size:2;
+       margin-bottom:20px;
+   } 
+    </style>
 </head>
-<body background="grunge-watercolor-background-using-pastel-colours_1048-6530.webp">
-    <h1>My education details</h1>
-    <table border="8" border style="border-collapse: collapse" cellspacing="5" cellpadding="5">
+<body>
+   <h1> My education details</h1>
+    <table class="education-table"border="2" style="border-collapse:collapse">
         <tr>
             <th>Course</th>
             <th>College name</th>
@@ -37,22 +47,19 @@
         </tr>
         <tr>
             <td>SSC</td>
-            <td>Z.P.H school(Thatiguda)<img src="ZPH_School.jpg
-                                           "
- width="150" height="120"></td>
+            <td>Z.P.H school(Thatiguda)<img src="Zph.jpg" width="150" height="80"></td>
             <td>584</td>
             <td>2021</td>
         </tr>
         <tr>
             <td>Intermediate</td>
-            <td>AP model college (Garbham)<img src="IMG20181108113852.jpg" width="150" height="120"></td>
+            <td>AP model college (Garbham)<img src="model.jpg" width="150" height="80"></td>
             <td>941</td>
             <td>2023</td>
         </tr>
         <tr>
             <td>UG </td>
-            <td>Silver jubilee college(kurnool)<img src="FB_IMG_1747067523890.jpg"
- width="150"height="120"></td>
+            <td>Silver jubilee college(kurnool)<img src="silver.jpg" width="150"height="80"></td>
             <td>800</td>
             <td>2027</td>
         </tr>
