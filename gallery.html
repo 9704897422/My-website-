@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>radhe Krishna</title>
+    <style>
+        body{
+            margin:0;
+            font-family: 'Segoe UI', sans-serif;
+            background:linear-gradient(to right,#fcd2f2,#fcd2bd,#fcbc93,#fca769,#fca8dd);
+            color: black;
+            padding :40px;
+        }
+        h1{
+            text-align: center ;
+            color: #fc5e54;
+            text-shadow:2px 2px 4px wheat;
+            margin-bottom:50px;
+        }
+        .gallery-box{
+        max-width:700px;
+        margin: auto;
+        background-color:#eaffea;
+         padding:20px;
+        border-radius:15px;
+        box-shadow: θ 8px 16px purple;
+        position:relative;
+        overflow:hidden;
+        }
+        .gallery-box h3 {
+            color: turquoise;
+            text-align:center;
+            margin-bottom:15px;
+        }
+        .gallery-container{
+         display:flex;
+         overflow-x:auto;
+         scroll-behavior: smooth;
+       }
+       .gallery-container img{
+           width :300px;
+           margine-right:15px;
+           border-radius:10px;
+           box-shadow:0 4px 8px crimson;
+           transition:transform 0.3s;
+       }
+           .gallery-container img:hover{
+           transform:scale(1.05);
+         }
+           .scro11-btn{
+           position:absolute;
+           top:50%;
+           transform:translateY(-50%);
+           background-color:lightgray;
+           color:brown;
+           font-size:24px;
+           padding:10px;
+           cursor:pointer;
+           border-radius:50%;
+           border:none;
+       }
+      .scroll-btn:hover {
+        background-color:silver;
+        }
+        .scroll-btn.scrol1-left{
+             left:10px;
+           }
+       .scroll-btn.scroll-right{
+         right:10px;
+         }
+     .scrolling-strip{
+          overflow:hidden;
+           white-space: nowrap;
+           width:100%;
+           position: relative;
+          margin-top:60px;
+          height:160px;
+          }
+     .scrolling-content{
+         display: inline-block;
+         white-space: nowrap;
+         animation:scroll-left 40s linear infinite;
+            }
+    .scrolling-content img{
+        height:150px;
+        width:250px;
+         margin-right:20px;
+         border-radius:10px;
+        display:inline-block;
+        transition:transform 0.3s;
+        }
+    .scrolling-content img:hover{
+        transform:scale(1.1);
+      }
+      @keyframes scroll-left{
+      0%{
+      transform:translateX(0%);
+    }
+     100%{
+     transform: translateX(-50%);
+     }
+     }
+    </style>
+</head>
+<body>
+    <i><h1>Lord Sri Krishna </h1></i>
+    <div class ="gallery-box">
+        <h3>Krishna role in Mahabharat</h3>
+         <button class="scroll-btn scroll-left"
+         onclick="scrollGallery(-320)"> &#8592</button>
+     <div class="gallery-container" id="gallery">
+           <img src="bk.jpeg">
+           <img src="yakr.jpeg">
+           <img src="radhe.jpeg">
+           <img src="gita.jpeg">
+       </div>
+       <button class="scroll-btn scroll-right"onclick="scrollGallery(320)"> &#8594;</button>
+    </div>
+    <div class="scrolling-strip">
+     <div class="scrolling-content">
+         <img src="flk.jpeg">
+         <img src="ck.jpeg">
+         <img src="moonk.jpeg">
+         <img src="jai.jpeg">
+         
+         <img src="flk.jpeg">
+         <img src="ck.jpeg">
+         <img src="moonk.jpeg">
+         <img src="jai.jpeg">
+         </div>
+         </div>
+<script>
+function scrollGallery(amount){
+const gallery =document.getElementById("gallery");
+gallery.scrollBy({left: amount, behavior:"smooth"});
+}</script>
+</body>
+</html>
